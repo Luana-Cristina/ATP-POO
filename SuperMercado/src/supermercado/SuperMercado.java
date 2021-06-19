@@ -39,7 +39,7 @@ public class SuperMercado {
 	valores = leValores (nomeVal);
         int quantidade = this.retornaInteiro(valores[1]);
 
-	Guloseimas guloseimas = new Bebidas (valores[0],quantidade,valores[2]);
+	Guloseimas guloseimas = new Guloseimas (valores[0],quantidade,valores[2]);
             return guloseimas;
     }
     private boolean intValido(String s) {
