@@ -1,15 +1,17 @@
-
 package supermercado;
 
-public class Guloseimas extends Produtos {
+public final class Guloseimas extends Produtos {
+    private static final long serialVersionUID = 1L;
 
-    public Guloseimas(String nome, int quantidade, float preco) {
-        super(nome, quantidade, preco);
+    public Guloseimas(String nome, int quantidade, String descricao) {
+        super(nome, quantidade, descricao);
+        this.tipo = "Guloseimas";
     }
 
     @Override
-    public void formaPag() {
-        
+    public String formaPag() {
+        return "Guloseimas pagamento em dinheiro.";
     }
     
 }
+
