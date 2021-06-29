@@ -1,18 +1,23 @@
 package supermercado;
 
-public abstract class Produtos {
+import java.io.Serializable;
+
+
+public abstract class Produtos implements Serializable{
+    
+    private static final long serialVersionUID = 1L;
+    
     private String nome;
     private int quantidade;
-    private float preco;
-    protected String categoria;
+    private String descricao;
+    protected String tipo;
     
     public abstract String formaPag();
 
-    public Produtos(String nome, int quantidade, float preco, String categoria) {
+    public Produtos(String nome, int quantidade, String descricao) {
         this.nome = nome;
         this.quantidade = quantidade;
-        this.preco = preco;
-        this.categoria = categoria;
+        this.descricao = descricao;
     }
 
     public String getNome() {
@@ -31,33 +36,24 @@ public abstract class Produtos {
         this.quantidade = quantidade;
     }
 
-    public float getPreco() {
-        return preco;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setPreco(float preco) {
-        this.preco = preco;
+    public void setDescricao (String descricao) {
+        this.descricao = descricao;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
 
     @Override
     public String toString() {
         String produto = "";
-        produto += "Nome: " + this.nome + "\n";
+        produto += "Nome: " + this.nome + "\n";        
         produto += "Quantidade: " + this.quantidade + "\n";
-        produto += "Preço: R$ " + this.preco + "\n";
-        produto += "Categoria: " + this.categoria + "\n";
-        produto += "Forma de Pagamento: " + formaPag();
+        produto += "Descrição: " + this.descricao + "\n";
+        produto += "Tipo: " + this.tipo + "\n";
+        produto += "Forma de Pagamento: " + formaPag() + "\n";
         return produto;
     }
-
-    
-
+        
 }
