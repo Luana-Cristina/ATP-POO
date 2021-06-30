@@ -156,10 +156,10 @@ public class SuperMercado{
 			switch (opc1) {
 			case 1:
 				menu = "Entrada de Produtos\n" +
-						"Opções:\n" + 
-						"1. Bebidas\n" +
-						"2. Guloseimas\n" +
-                                                "3. Laticínios\n";
+					"Opções:\n" + 
+					"1. Bebidas\n" +
+					"2. Guloseimas\n" +
+                                        "3. Laticínios\n";
 
 				entrada = JOptionPane.showInputDialog (menu + "\n\n");
 				opc2 = this.retornaInteiro(entrada);
