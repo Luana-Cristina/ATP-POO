@@ -1,3 +1,4 @@
+
 package supermercado;
 
 public final class Guloseimas extends Produtos {
@@ -5,13 +6,12 @@ public final class Guloseimas extends Produtos {
 
     public Guloseimas(String nome, int quantidade, String descricao) {
         super(nome, quantidade, descricao);
-        this.tipo = "Guloseimas";
-    }
+        this.categoria = "Guloseima";
+    }    
 
     @Override
-    public String formaPag() {
-        return "Guloseimas pagamento em dinheiro.";
+    public String tipoProd() {
+        return "Balas, bombons, balas de gelatina,\n chocolate, pirulitos, paçoca, suspiros etc.";
     }
     
 }
-
