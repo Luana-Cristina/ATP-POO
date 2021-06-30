@@ -100,16 +100,16 @@ public class SuperMercado1 {
 		SuperMercado1 merc  = new SuperMercado1();
 
 		Guloseimas fini = new Guloseimas ("Fini", 1, "Azedinha");
-		Guloseimas doritos = new Guloseimas ("Doritos", 2, "Pequeno");
+		Guloseimas pacoca = new Guloseimas ("Paçoca", 2, "Zero");
 		Bebidas  suco = new Bebidas("Prats", 2, "Laranja");
 		Bebidas  coca = new Bebidas("Coca-Cola", 1, "Zero");
 		merc.adicionaProdutos(fini);
-		merc.adicionaProdutos(doritos);
+		merc.adicionaProdutos(pacoca);
 		merc.adicionaProdutos(suco);
 		merc.adicionaProdutos(coca);
 		merc.listarProdutos();
 		merc.gravarProdutos();
-		merc.excluirProdutos(doritos);
+		merc.excluirProdutos(pacoca);
 		merc.listarProdutos();
 		merc.excluirProdutos();
 		merc.listarProdutos();
