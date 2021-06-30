@@ -1,4 +1,3 @@
-
 package supermercado;
 
 public class Laticinios extends Produtos{
