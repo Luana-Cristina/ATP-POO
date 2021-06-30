@@ -10,7 +10,7 @@ public class Laticinios extends Produtos{
 
     @Override
     public String tipoProd() {
-        return "Queijos, iogurtes, leites,\n requeijão, creme de leite etc.";
+        return "Queijos, iogurtes, leites, requeijão,\n creme de leite etc.";
 
     }
     
