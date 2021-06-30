@@ -6,12 +6,12 @@ public class Bebidas extends Produtos {
 
     public Bebidas(String nome, int quantidade, String descricao) {
         super(nome, quantidade, descricao);
-        this.tipo = "Bebidas";
+        this.categoria = "Bebidas";
     }
 
     @Override
-    public String formaPag() {
-        return "Bebidas pagamento em cartão";
+    public String tipoProd() {
+        return "Refrigerantes, sucos, água de coco,\n vinho, cerveja etc.";
     }
         
 }
